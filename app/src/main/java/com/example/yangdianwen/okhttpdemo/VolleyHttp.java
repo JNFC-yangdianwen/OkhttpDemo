@@ -38,6 +38,20 @@ public class VolleyHttp {
               Log.e("TAG", error.getMessage(), error);
           }
       });
+      //请求网络图片
+//      ImageRequest imageRequest = new ImageRequest(
+//              "http://developer.android.com/images/home/aw_dac.png",
+//              new Response.Listener<Bitmap>() {
+//                  @Override
+//                  public void onResponse(Bitmap response) {
+//                      imageView.setImageBitmap(response);
+//                  }
+//              }, 0, 0, Config.RGB_565, new Response.ErrorListener() {
+//          @Override
+//          public void onErrorResponse(VolleyError error) {
+//              imageView.setImageResource(R.drawable.default_image);
+//          }
+//      });
       mQueue.add(stringRequest);
   }
 
